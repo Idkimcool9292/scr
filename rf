@@ -1,0 +1,375 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local pfp = Instance.new("ImageLabel")
+local Username = Instance.new("TextLabel")
+local RR = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UIGradient_2 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local Players = Instance.new("TextButton")
+local V1 = Instance.new("Frame")
+local RR_2 = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UIGradient_4 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local TXT = Instance.new("TextBox")
+local UIGradient_5 = Instance.new("UIGradient")
+local TP = Instance.new("TextButton")
+local UIGradient_6 = Instance.new("UIGradient")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(255, 233, 228)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.207624227, 0, 0.319095463, 0)
+Frame.Size = UDim2.new(0, 504, 0, 263)
+
+pfp.Name = "pfp"
+pfp.Parent = Frame
+pfp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pfp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+pfp.BorderSizePixel = 0
+pfp.Position = UDim2.new(0, 0, 0.749049425, 0)
+pfp.Size = UDim2.new(0, 73, 0, 66)
+pfp.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Username.Name = "Username"
+Username.Parent = Frame
+Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Username.BackgroundTransparency = 1.000
+Username.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Username.BorderSizePixel = 0
+Username.Position = UDim2.new(0.208333328, 0, 0.836501896, 0)
+Username.Size = UDim2.new(0, 163, 0, 28)
+Username.Font = Enum.Font.DenkOne
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+RR.Name = "RR"
+RR.Parent = Frame
+RR.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RR.BorderSizePixel = 0
+RR.Position = UDim2.new(-0.0019841271, 0, -0.209125474, 0)
+RR.Size = UDim2.new(0, 505, 0, 48)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(80, 80, 80)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(79, 79, 79)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(121, 121, 121))}
+UIGradient.Parent = RR
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(0.61, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_2.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.299603164, 0, -0.186311781, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 35)
+TextLabel.Font = Enum.Font.Garamond
+TextLabel.Text = "Custom UI"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Players.Name = "Players"
+Players.Parent = Frame
+Players.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Players.BackgroundTransparency = 1.000
+Players.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Players.BorderSizePixel = 0
+Players.Position = UDim2.new(-0.0019841271, 0, 0, 0)
+Players.Size = UDim2.new(0, 105, 0, 31)
+Players.Font = Enum.Font.Bangers
+Players.Text = "Players"
+Players.TextColor3 = Color3.fromRGB(255, 255, 255)
+Players.TextScaled = true
+Players.TextSize = 14.000
+Players.TextWrapped = true
+
+V1.Name = "V1"
+V1.Parent = Frame
+V1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V1.BorderColor3 = Color3.fromRGB(255, 233, 228)
+V1.BorderSizePixel = 0
+V1.Position = UDim2.new(1.13623893, 0, -0.0281014685, 0)
+V1.Size = UDim2.new(0, 504, 0, 263)
+V1.Visible = false
+
+RR_2.Name = "RR"
+RR_2.Parent = V1
+RR_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RR_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RR_2.BorderSizePixel = 0
+RR_2.Position = UDim2.new(-0.0019841271, 0, -0.209125474, 0)
+RR_2.Size = UDim2.new(0, 505, 0, 48)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(80, 80, 80)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(79, 79, 79)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(121, 121, 121))}
+UIGradient_3.Parent = RR_2
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.40, Color3.fromRGB(34, 34, 34)), ColorSequenceKeypoint.new(0.61, Color3.fromRGB(53, 53, 53)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_4.Parent = V1
+
+TextLabel_2.Parent = V1
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.299603164, 0, -0.186311781, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_2.Font = Enum.Font.Garamond
+TextLabel_2.Text = "Custom UI"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TXT.Name = "TXT"
+TXT.Parent = V1
+TXT.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+TXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TXT.BorderSizePixel = 0
+TXT.Position = UDim2.new(0.301587313, 0, 0.809885919, 0)
+TXT.Size = UDim2.new(0, 200, 0, 50)
+TXT.Font = Enum.Font.SourceSans
+TXT.Text = ""
+TXT.TextColor3 = Color3.fromRGB(0, 0, 0)
+TXT.TextSize = 14.000
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(71, 71, 71)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(59, 59, 59)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(33, 33, 33))}
+UIGradient_5.Parent = TXT
+
+TP.Name = "TP"
+TP.Parent = V1
+TP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TP.BorderSizePixel = 0
+TP.Position = UDim2.new(0.301587313, 0, 0.585551322, 0)
+TP.Size = UDim2.new(0, 200, 0, 50)
+TP.Font = Enum.Font.FredokaOne
+TP.Text = "TP TO"
+TP.TextColor3 = Color3.fromRGB(100, 100, 100)
+TP.TextScaled = true
+TP.TextSize = 14.000
+TP.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(98, 98, 98)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(59, 59, 59)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(26, 26, 26))}
+UIGradient_6.Parent = TP
+
+-- Scripts:
+
+local function QXTF_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local frame = script.Parent  -- The frame you want to make draggable
+	
+	local UIS = game:GetService("UserInputService")
+	local dragging = false
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	sssssss
+end
+coroutine.wrap(QXTF_fake_script)()
+local function ZHJKR_fake_script() -- Frame.V 
+	local script = Instance.new('LocalScript', Frame)
+
+	local player = game.Players.LocalPlayer  -- Reference to the local player
+	local usernameLabel = script.Parent:FindFirstChild("Username")  -- The TextLabel named "Username"
+	local profilePicture = script.Parent:FindFirstChild("pfp")  -- The ImageLabel named "pfp"
+	
+	-- Set the TextLabel to the player's username
+	if usernameLabel then
+		usernameLabel.Text = player.Name
+	end
+	
+	-- Set the ImageLabel to the player's profile picture
+	if profilePicture then
+		local userId = player.UserId
+		profilePicture.Image = "rbxthumb://type=AvatarHeadShot&id=" .. userId .. "&w=420&h=420"
+	end
+	
+end
+coroutine.wrap(ZHJKR_fake_script)()
+local function ZHMCVNV_fake_script() -- V1.LocalScript 
+	local script = Instance.new('LocalScript', V1)
+
+	local frame = script.Parent  -- The frame you want to make draggable
+	
+	local UIS = game:GetService("UserInputService")
+	local dragging = false
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(ZHMCVNV_fake_script)()
+local function DUQZOX_fake_script() -- V1.V 
+	local script = Instance.new('LocalScript', V1)
+
+	local player = game.Players.LocalPlayer  -- Reference to the local player
+	local usernameLabel = script.Parent:FindFirstChild("Username")  -- The TextLabel named "Username"
+	local profilePicture = script.Parent:FindFirstChild("pfp")  -- The ImageLabel named "pfp"
+	
+	-- Set the TextLabel to the player's username
+	if usernameLabel then
+		usernameLabel.Text = player.Name
+	end
+	
+	-- Set the ImageLabel to the player's profile picture
+	if profilePicture then
+		local userId = player.UserId
+		profilePicture.Image = "rbxthumb://type=AvatarHeadShot&id=" .. userId .. "&w=420&h=420"
+	end
+	
+end
+coroutine.wrap(DUQZOX_fake_script)()
+local function EIILAAL_fake_script() -- V1.LocalScript 
+	local script = Instance.new('LocalScript', V1)
+
+	local tpButton = script.Parent:WaitForChild("TP")   -- The 'TP' button
+	local textBox = script.Parent:WaitForChild("TXT")   -- The 'TXT' TextBox
+	
+	local function teleportToPlayer()
+		local inputName = textBox.Text:lower() -- Get the typed name and make it lowercase for case-insensitive search
+	
+		local closestPlayer = nil
+		local playerToTeleport = game.Players.LocalPlayer
+	
+		-- Loop through all players in the game to find the closest match
+		for _, player in pairs(game.Players:GetPlayers()) do
+			local displayName = player.DisplayName:lower()
+			local username = player.Name:lower()
+	
+			-- Check if the typed name matches part of the username or display name
+			if displayName:find(inputName) or username:find(inputName) then
+				closestPlayer = player
+				break  -- Stop searching after the first match
+			end
+		end
+	
+		if closestPlayer then
+			-- Teleport the local player to the closest matching player
+			local character = playerToTeleport.Character
+			local targetCharacter = closestPlayer.Character
+	
+			if character and targetCharacter then
+				character:MoveTo(targetCharacter.HumanoidRootPart.Position)
+			else
+				warn("Character not found for one or both players.")
+			end
+		else
+			warn("No player found with that name.")
+		end
+	end
+	
+	-- Connect the button click to the teleport function
+	tpButton.MouseButton1Click:Connect(teleportToPlayer)
+	
+end
+coroutine.wrap(EIILAAL_fake_script)()
+local function VQMHZ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	-- Assuming you have a ScreenGui, a Button named 'Players', and a Frame named 'V1' in the GUI
+	
+	local playersButton = script.Parent:WaitForChild("Players")  -- The 'Players' button
+	local v1Frame = script.Parent:WaitForChild("V1")             -- The 'V1' frame
+	
+	-- Initially set the frame to invisible
+	v1Frame.Visible = false
+	
+	-- Function to toggle visibility of the frame
+	local function toggleV1Frame()
+		v1Frame.Visible = not v1Frame.Visible
+	end
+	
+	-- Connect the button click to the function
+	playersButton.MouseButton1Click:Connect(toggleV1Frame)
+	
+end
+coroutine.wrap(VQMHZ_fake_script)()
